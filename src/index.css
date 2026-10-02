@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-serif-bible {
+  font-family: 'Lora', Georgia, Cambria, serif;
+}
+
+/* Custom Theological Prose Styling for React-Markdown */
+.theology-prose {
+  color: #292524; /* stone-800 */
+}
+
+.theology-prose h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1c1917;
+  letter-spacing: -0.02em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #e7e5e4;
+  padding-bottom: 0.5rem;
+}
+
+.theology-prose h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #44403c;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.theology-prose h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #78350f; /* amber-900 */
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.theology-prose h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #292524;
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.theology-prose p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.theology-prose blockquote {
+  border-left: 4px solid #b45309; /* amber-700 */
+  background: #fef3c733; /* amber-100 with opacity */
+  padding: 0.85rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 0.75rem 0.75rem 0;
+  font-style: italic;
+  color: #1c1917;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+.theology-prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.theology-prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  space-y: 0.5rem;
+}
+
+.theology-prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  space-y: 0.5rem;
+}
+
+.theology-prose li {
+  margin-bottom: 0.4rem;
+  line-height: 1.7;
+}
+
+.theology-prose strong {
+  font-weight: 700;
+  color: #1c1917;
+}
+
+.theology-prose hr {
+  border-color: #e7e5e4;
+  margin: 1.5rem 0;
+}
+
+/* Print Specific Optimization */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+  .theology-prose {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  .theology-prose blockquote {
+    background: #f9f9f9 !important;
+    border-left-color: #333 !important;
+  }
+}

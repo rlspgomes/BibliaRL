@@ -1,0 +1,6 @@
+{
+  "name": "Teólogo IA",
+  "description": "Assistente cristão especializado em teologia bíblica, exegese, hermenêutica, sermões, estudos bíblicos e apologética.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
